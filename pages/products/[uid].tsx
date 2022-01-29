@@ -12,12 +12,16 @@ const Post = ({ data } : any) => {
   const [title, setTitle] = useState("")
   const [desc , setDesc] = useState("")
   const [photo , setPhoto] = useState("")
+  const [price , setPrice] = useState("")
+  const [serial , setSerial] = useState("")
 
   useEffect(() => {
     CONFIG.ALL.filter(r => r.link === uid).map(async r => {
       setTitle(r.title)
       setDesc(r.description)
       setPhoto(r.img)
+      setPrice(r.price)
+      setSerial(r.serial)
     })
   })
 
@@ -25,12 +29,13 @@ const Post = ({ data } : any) => {
     <div>
       <Navbar />
       <Header title={title} />
-      <div className="mt-5 container mx-auto items-center w-9/12">
+      <div className="mt-5 container mx-auto items-center md:w-9/12 w-11/12">
         <div className="flex">
           <img className="md:w-2/6 w-3/6 h-auto border-1 border-gray-900" src={photo} alt="" />
           <div>
-            <p className="text-2xl font-semibold">
+            <p className="flex text-2xl font-semibold">
               {title}
+              <p className="text-gray-500">{serial}</p>
             </p>
             <p className="text-gray-700">
               {desc}
@@ -49,12 +54,12 @@ const Post = ({ data } : any) => {
                 <p>XXL</p>
               </div>
             </div>
-            <div className="flex mt-3">
-              <div className="mr-2 h-5 border-solid border-2 border-gray-900 px-4 bg-gray-400 rounded-xl">
-              </div>
-              <div className="mr-2 border-solid border-2 border-gray-900 px-2 bg-gray-900 rounded-xl">
-              </div>
+            <a href="https://t.me/rexulec">
+            <div className="flex mt-3 p-4 justify-center rounded-xl hover:bg-blue-500 transition bg-blue-400">
+ 
+                {price}
             </div>
+            </a>
           </div>
         </div>
         <p className="mt-3 mb-10">
