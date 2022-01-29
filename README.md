@@ -1,5 +1,5 @@
 ### 💦 Reponse.app
->  The official website of Reponse!
+>  The official shop website of Reponse!
 
 
 >  This project is completely open source. So you can use it wherever you want
