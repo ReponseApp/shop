@@ -8,7 +8,7 @@ return (
   <div className="">
       <div className="w-screen bg-gray-800 h-3"></div>
         <div className="h-48 bg-gray-500 rounded-b-2xl">
-          <div className="flex bg-homegradiant bg-cover opacity-50 h-48 w-screen justify-center rounded-b-2xl">
+          <div className="flex bg-homegradiant bg-cover opacity-80 shadow-inner shadow- h-48 w-screen justify-center rounded-b-2xl">
             <div className="flex items-center md:w-9/12 w-11/12">
               <div className="w-full h-10">
                 <p className="md:text-2xl text-lg font-semibold">
@@ -38,13 +38,13 @@ return (
           </div>
         </div>
         <div className="flex my-5 justify-center">
-          <div className="flex w-9/12 justify-between">
+          <div className="md:flex px-10 md:w-8/12 justify-between">
             {CONFIG.HOT.map((r) => (
-                  <div className="w-4/12 p-5 border-2 border-gray-900 rounded-3xl">
+                  <div className="md:w-5/12 mb-5 p-5 border-2 border-gray-900 rounded-3xl">
                     <img src={r.img} alt="" />
                     <p className="text-xl font-semibold">{r.title}</p>
-                    <p className="text-gray-700">{r.description}</p>
-                    <a href={"/products/" + r.link}>İncele..</a>
+                    <p className="text-gray-700 mb-4">{r.description}</p>
+                    <a className="p-2 px-5 rounded-xl bg-blue-400" href={"/products/" + r.link}>View more..</a>
                   </div>
                   ))}
           </div>

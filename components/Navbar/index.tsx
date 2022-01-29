@@ -8,8 +8,11 @@ export const Navbar = function(){
         <div className="flex w-screen md:p-5 p-2 bg-gray-300 justify-center">
             <div className="flex md:w-9/12 w-full justify-between">
                 <div className="flex items-center">
-                    <img src="/assets/graylogo.png/" className="w-14" alt="" />
-                    <p>| Shop.</p>
+                    <a className="flex items-center" href="/">
+                    <img src="/assets/bluelogo.png/" className="w-14" alt="" />
+                    <p>| Shop</p>
+                    </a>
+
                 </div>
                 <div className="flex items-center">
                     <a href="" className="flex mr-2 text-red-500">

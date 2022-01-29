@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <div >
       <Navbar />
       <MainPage />
-      <Header title="Shoop"/>
+      <Header title="Shop"/>
     </div>
   );
 };
