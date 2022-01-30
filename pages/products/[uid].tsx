@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { Navbar } from "@components/Navbar";
 import { Header } from "@components/Header";
 
-const Post = ({ data } : any) => {
+const Post = ({ data,product } : any) => {
 
   const router = useRouter()
   const { uid } = router.query
@@ -16,7 +16,7 @@ const Post = ({ data } : any) => {
   const [serial , setSerial] = useState("")
 
   useEffect(() => {
-    CONFIG.ALL.filter(r => r.link === uid).map(async r => {
+   product.map((r:any) => {
       setTitle(r.title)
       setDesc(r.description)
       setPhoto(r.img)
@@ -108,7 +108,14 @@ paths,
 fallback:false
 }
 }
-
+export const getStaticProps = (context) => {
+const product = CONFIG.ALL.filter((r:any) => r.link === context.params.id)
+return {
+props: {
+product
+}
+}
+}
 export default Post;
 
 
