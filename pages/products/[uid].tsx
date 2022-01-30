@@ -97,6 +97,17 @@ export async function getStaticProps() {
 }
 */
 
+export const getStaticPaths =  () => {
+const paths = CONFIG.ALL.map(item => {
+return {
+params: {id: item.link.toString() }
+}
+})
+return {
+paths,
+fallback:false
+}
+}
 
 export default Post;
 
