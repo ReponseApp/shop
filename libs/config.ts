@@ -15,7 +15,7 @@ export const CONFIG = {
       price: "159.99TL",
       link: "black-basic-hoodie",
       serial: "#1"
-    }
+    },
   ] as HOT[],
 
   ALL: [
