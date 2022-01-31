@@ -13,7 +13,7 @@ const index = function(){
     <div className="">
       <Header title="Products."/>
       <Navbar />
-      <div className="h-3 bg-gray-800  w-screen"></div>
+      <div className="h-3 bg-gray-800 w-screen"></div>
       <Categories />
       <div className="flex my-5 justify-center">
           <div className="">

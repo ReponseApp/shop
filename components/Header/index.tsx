@@ -7,21 +7,20 @@ export const Header:FC<IProps> = function({title}){
     return (
     <Head>
         <title>{title} | Reponse App</title>
-        <meta name="description" content="Created by Reponse Team" />
         <link rel="icon" href="assets/pinklogo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <meta name="title" content="Reponse App | Send messages, Not personal data."/>
-        <meta name="description" content="Communication has never been this easy"/>
+        <meta name="title" content="Reponse App | Shop."/>
+        <meta name="description" content="New Hoodies are now available!"/>
 
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://reponse.app"/>
+        <meta property="og:url" content="https://shop.reponse.app"/>
         <meta property="og:title" content="Reponse App"/>
         <meta property="og:description" content="Send messages, Not personal data. Communication has never been this easy"/>
         <meta property="og:image" content="http://reponse.app/assets/logo.png"/>
         <meta property="theme-color" content="#9883E5"/>
 
-        <meta property="twitter:url" content="https://reponse.app/"/>
+        <meta property="twitter:url" content="https://shop.reponse.app/"/>
         <meta property="twitter:title" content="reponse.app"/>
         <meta property="twitter:description" content="Send messages, Not personal data. Communication has never been this easy"/>
         <meta property="twitter:image" content="http://reponse.app/assets/logo.png"/>
